@@ -1,0 +1,5 @@
+//how to use JAVA DecimalFormat（）
+import java.txt.DecimalFormat;
+//main()
+DecimalFormat df=new DecimalFormat("#.00");
+System.out.print(df.format(variable));
