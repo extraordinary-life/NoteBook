@@ -3,3 +3,5 @@ import java.txt.DecimalFormat;
 //main()
 DecimalFormat df=new DecimalFormat("#.00");
 System.out.print(df.format(variable));
+//it'a easy to create a random num in a~z
+int i=(int)'a'+(int)('z'-'a')*Math.random();
