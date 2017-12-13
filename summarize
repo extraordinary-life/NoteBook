@@ -6,3 +6,44 @@ System.out.print(df.format(variable));
 
 //it'a easy to create a random num in a~z
 int i=(int)'a'+(int)('z'-'a')*Math.random();
+
+//10进制转2进制
+import java.util.Scanner;
+public class Text{
+	public static void main(String [] args){
+	Scanner input=new Scanner(System.in);
+	System.out.println("Enter:");
+	String num=input.next();
+	int num01=num.charAt(0);
+	int num02=0;
+	
+	if(num01>=(int)'A'&&num01<=(int)'F')
+	{num02=num01-(int)'A'+10;
+	turn10To2(num02);
+	}
+	else if(num01>=(int)'0'&&num01<=(int)'9')
+	{num02=num01-(int)'0';
+	turn10To2(num02);
+	}
+	else
+	{System.out.print("Wrong Number！");}}
+	
+public static void turn10To2(int args){	
+	int[] arr=new int[4];
+	for(int i=0;i<4;i++){
+		int x=0;
+		if(args>=2){
+		x=args%2;
+		arr[3-i]=x;
+		}
+		if(args==1)
+		{
+		arr[3-i]=1;
+		}
+		args=args / 2;
+		}
+		for(int i=0;i<4;i++){
+		System.out.print(arr[i]);
+		}}
+		
+	}
